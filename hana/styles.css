@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #b6bbcb;
+  --light-yellow: #eee4e7;
+  --dark: #151728;
+  --dark-blue: #2d2d4a;
+  --light-blue: #938fb2;
+  --blue: #5c587a;
+  --primary: #7f5686;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url("./assets/bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  min-height: 50vh;
+  background-color: var(--light-yellow);
+  border-radius: 15px;
+  box-shadow: -6px 10px 31px 3px var(--light);
+  padding: 10px 20px;
+}
+
+.title h1 {
+  color: var(--primary);
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.title h2 {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.description {
+  color: var(--dark-blue);
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0;
+  font-style: italic;
+}
+
+.date {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--primary);
+  height: 50px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  background-color: transparent;
+  color: var(--dark-blue);
+}
+
+.button {
+  display: block;
+  width: 100%;
+  border: none;
+  height: 50px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  background-color: var(--primary);
+  color: var(--light-yellow);
+  cursor: pointer;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.form {
+  margin-top: 70px;
+}
+
+/* .date-picker-container {
+  position: relative;
+  width: 200px;
+}
+
+#datepicker {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.month div {
+  text-align: center;
+}
+
+.month button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.weekdays,
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.weekdays div,
+.days div {
+  width: calc(100% / 7);
+  padding: 5px 0;
+  text-align: center;
+}
+
+.days div {
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.days div:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+} */
