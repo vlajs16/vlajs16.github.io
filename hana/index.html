@@ -3,34 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hanin dnevni horoskop</title>
+
+    <meta
+      name="description"
+      content="Verujete u horoskop? Interesuje vas šta su vam zvezde danas pripremile? Proverite u aplikaciji."
+    />
+
+    <link rel="shortcut icon" href="./assets/loader.png" type="image/x-icon" />
+
+    <meta property="og:title" content="Hanin dnevni horoskop" />
+    <meta
+      property="og:description"
+      content="Verujete u horoskop? Interesuje vas šta su vam zvezde danas pripremile? Proverite u aplikaciji."
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=1" />
+    <link rel="stylesheet" href="styles.css?v=2" />
   </head>
   <body>
     <div class="container">
-      <div class="title">
-        <h1>Hanin</h1>
-        <h2>Dnevni horoskop</h2>
+      <div>
+        <div class="title">
+          <h1>Hanin</h1>
+          <h2>Dnevni horoskop</h2>
+        </div>
+        <p class="description">
+          Proverite svoj dnevni horoskop klikom na dugme ispod
+        </p>
       </div>
-      <p class="description">
-        Proverite svoj dnevni horoskop unosom datuma rođenja
-      </p>
+      <div class="loader">
+        <img
+          src="assets/loader.png"
+          alt="hana"
+          class="rotatable"
+          id="loaderImg"
+        />
+      </div>
       <form class="form" id="horoskopForm">
-        <p id="error-message" class="hidden">Unesi datum magarče!</p>
-        <input
+        <!-- <p id="error-message" class="hidden">Unesi datum magarče!</p> -->
+        <!-- <input
           type="date"
           name="date"
           id="date"
           class="date"
           placeholder="Unesite datum rođenja"
-        />
-        <button class="button">Pretraži</button>
+        /> -->
+        <button class="button">Proveri horoskop</button>
       </form>
     </div>
     <div class="hidden overlay" id="overlay"></div>
@@ -40,6 +64,6 @@
       <p id="message"></p>
       <img src="" alt="slika" id="img-hana" />
     </div>
-    <script src="app.js?v=1"></script>
+    <script src="app.js?v=2"></script>
   </body>
 </html>

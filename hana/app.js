@@ -4,15 +4,21 @@ function initialize() {
     .addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the form from submitting normally
 
-      const dateOfBirth = new Date(document.getElementById("date").value);
-      const errMessage = document.getElementById("error-message");
-      const zodiacSign = getZodiacSign(dateOfBirth);
-      if (zodiacSign !== "unknown") {
+      // const dateOfBirth = new Date(document.getElementById("date").value);
+      // const errMessage = document.getElementById("error-message");
+      // const zodiacSign = getZodiacSign(dateOfBirth);
+      // if (zodiacSign !== "unknown") {
+      //   updateAndShowMessage("aries");
+      //   errMessage.classList.add("hidden");
+      // } else {
+      //   errMessage.classList.remove("hidden");
+      // }
+      const loader = document.getElementById("loaderImg");
+      loader.classList.add("rotate");
+      setTimeout(() => {
         updateAndShowMessage("aries");
-        errMessage.classList.add("hidden");
-      } else {
-        errMessage.classList.remove("hidden");
-      }
+        loader.classList.remove("rotate");
+      }, 2000);
     });
 
   document.addEventListener("click", function (event) {
